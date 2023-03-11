@@ -6,7 +6,6 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "scheme":"com.example.myApp",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -17,10 +16,10 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier":"com.example.myApp"
+      "bundleIdentifier": "com.example.myApp"
     },
     "android": {
-      "package":"com.example.myApp",
+      "package": "com.example.myApp",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -28,6 +27,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "71de965d-b307-4b37-b8f8-3811ffeb02fd"
+      }
     }
   }
 }

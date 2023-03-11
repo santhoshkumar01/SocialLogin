@@ -5,7 +5,8 @@ import Footer from './Footer'
 import SplashScreen from './SplashScreen'
 import { Provider } from './Context'
 
-
+// ${applicationId}://{YOUR_AUTH0_APP_NAME}.auth0.com/android/${applicationId}/callback
+// com.example.myApp://myApp.auth0.com/android/com.example.myApp/callback
 //B4:6B:2E:5F:5A:30:C5:E4:E7:12:BB:F0:74:FC:2B:43:64:3A:FC:15 SHA1
 const Stack = createNativeStackNavigator()
 
