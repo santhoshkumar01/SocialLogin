@@ -51,6 +51,7 @@ const SignInScreen = (props) => {
         getUserDetails()
       } else {
         console.log('Not Getting Access Token')
+        return ToastMessage('Something Went Wrong')
       }
     })()
   }, [response, token])
