@@ -27,12 +27,13 @@ const SignInScreen = (props) => {
       const user = await response.json()
       setUserData(user)
       setLoader(false)
-      if (user?.given_name) {
+      if (user?.name && user?.email ) {
         props.navigation.navigate('footer')
       }
     } catch (error) {
       setLoader(false)
       console.log('Error While Google SignIn' + error)
+      return ToastMessage('Something Went Wrong')
     }
   }
 
